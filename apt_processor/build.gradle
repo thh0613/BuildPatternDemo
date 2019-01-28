@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.auto.service:auto-service:1.0-rc2'
+    implementation 'com.squareup:javapoet:1.8.0'
+    implementation project(':apt_anno')
+    implementation files ('/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/rt.jar')
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
